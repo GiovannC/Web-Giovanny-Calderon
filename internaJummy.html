@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Descripción página Jummy Restaurant</title>
+	<!-- Descripción: entre 155 a 160 caracteres -->
+	<meta name="description" content="Portafolio Web Giovanny Calderón, Giovanny Calderon">	
+	<!-- Normaliza estilos -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Vinculación mi hoja de estilos -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Prefijos-->
+	<script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+	<header>
+			<a href="index.html"><h4>Giovanny<span class="colorN">Calderón</span></h4></a>	
+			<!-- Cambio Menu a Boton Vista Movil -->
+			<nav id="menuMobile">
+				<div id="menuButton">
+				</div>
+			</nav>
+			<!-- Menu Vista Normal -->
+			<nav id="menuNormal">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="miperfil.html">Mi Perfil</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+	</header>
+	<section class="internaPortafolio">
+		<a href="portafolio.html" class="btnNaran">Volver</a>
+		<h1>Jummy Restaurant</h1>
+		<h2>Diseño y Desarrollo Web</h2>
+		<figure>
+			<img src="img/jummy1.jpg" alt="Jummy">
+		</figure>
+		<p>Ejemplo de una Página Web Responsive Design donde el menú de navegación cambia de vista con jQuery para resoluciones menores a 480 px, animación del menú en vista móvil con jQuery, ubicación del restaurante en mapa de Google Maps, fuentes personalizadas</strong></p>
+		<h3>Tecnologías utilizadas:</h3>
+				
+			<ul>HTML5</ul>
+			<ul>Css3</ul>
+			<ul>Responsive Design</ul>
+			<ul>jQuery</ul>
+			<ul>Sublime Text -Stylus</ul>
+		<!-- Boton Blanco -->
+		<a href="#" class="btnBlanco">Visitar Sitio Web</a>
+		<!-- Fin Boton Blanco -->
+	</section>
+	<script src="js/modernizr.custom.54642.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+	<script>
+		/*inicio();*/
+		/*$(function(){
+
+		});*/
+		
+		// Header detecion resolucion 
+			jQuery(function($) {
+                var open = false;
+
+                function resizeMenu() {
+                    if ($(this).width() < 768) {
+                        if (!open) {
+                            $("#menuNormal").hide();
+                        }
+                        $("#menuMobile").show();
+                    }
+                    else if ($(this).width() >= 768) {
+                        if (!open) {
+                            $("#menuNormal").show();
+                        }
+                        $("#menuMobile").hide(); 
+                    }
+                }
+        // Header efecto deslizar menu
+                function setupMenuButton() {
+                    $("#menuMobile").click(function(e) {
+                        $('#menuNormal').slideToggle('slow');
+        
+                        open = !open;
+                    });
+                }
+                $(window).resize(resizeMenu);
+                resizeMenu();
+                setupMenuButton();
+            });
+	   </script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+azul_texto = #2C3E50
+azul_claro = #3498DB
+azul_medio = #2980B9
+salmon = #E44C3C
+gris_claro = #7A7A7A
+
+/*Prefijos propietarios*/
+vendor-prefixes = o ms moz webkit 
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-ppiapp');
+	src:url('../fonts/icomoon.eot?#iefix-ppiapp') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ppiapp') format('woff'),
+		url('../fonts/icomoon.ttf?-ppiapp') format('truetype'),
+		url('../fonts/icomoon.svg?-ppiapp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+
+.icon-open:before {
+	content: "\e601";
+}
+
+.icon-mark-github:before {
+	content: "\f00a";
+}
+
+.icon-bubbles:before {
+	content: "\e604";
+}
+
+.icon-arrow-left:before {
+	content: "\e605";
+}
+
+.icon-plus:before {
+	content: "\e607";
+}
+*/
+a
+	color white
+	font-weight lighter
+	margin 0
+	padding 0
+	text-decoration none
+	transition all .3s	
+body
+	color azul_texto
+	font-size 16px
+	font-weight normal	
+	margin 0 auto
+	max-width 1200px
+	position relative
+h1, h2, h3, h4
+	color azul_claro
+	font-weight bold
+	margin 0 auto
+	padding 0
+	text-align center
+h1
+	border-bottom 1px solid azul_claro
+	max-width 180px	
+	padding 1em 1.5em 0 1.5em
+h2
+	color azul_texto	
+	line-height 135%
+	margin 1.5em
+h3
+	color azul_medio
+	font-weight normal
+	line-height 135%
+	margin 1.5em
+p
+	font-weight normal
+	line-height 135%
+	margin 1.5em
+	padding 0
+// ***** Inicio Header Global ***** 
+header
+	background rgba(gris_claro, 0.3)
+	box-shadow 0px 1px 5px rgba(black, 0.5)
+	min-height 40px
+	position relative
+	width 100%	
+	//position fixed
+	h4
+		color azul_texto
+		float left
+		font-weight bold
+		margin 0.8em 1.5em
+		padding 0
+		text-shadow 1px 1px 1px rgba(black, 0.3)
+		.colorN
+			color salmon
+	// Menu Mobile global	
+	#menuMobile
+		cursor pointer
+		display inline-block
+		margin  0 1.5em 
+		overflow hidden	
+		padding 0.4em 0
+		position absolute
+		right 0
+		top 0
+		#menuButton	
+			padding 0		
+		// IconFonts	
+			&:before
+				color salmon
+				content: "\e600"
+				font-family: 'icomoon';
+				font-size 26px
+				margin 0
+				padding 0
+				text-shadow 1px 1px 1px rgba(black, 0.3)
+			&:hover
+				opacity 0.7					
+	// Menu Mobile y normal global			
+	#menuNormal
+		background rgba(gris_claro, 0.4)
+		display none
+		float right
+		margin 0 0 1em 0
+		padding 0
+		width 100%	
+		ul
+			margin 0
+			padding 0
+			text-align center
+			li
+				display block
+				list-style-type none
+				margin 0.2em 0
+				padding  0.1em 0
+				width 100%	
+				a
+					color azul_texto
+					display block	
+					font-weight normal		
+					margin 0
+					padding 0.3em 0
+					&:hover
+						color salmon
+// ***** Fin Header Global ***** 		
+//  ------  Inicio Boton Blanco Borde Naranja ------	
+.btnBlanco 
+	background white
+	border 1px solid salmon
+	border-bottom 2px solid #B41818
+	border-radius 5px
+	color salmon
+	cursor pointer	
+	display block
+	margin 0 auto
+	margin-bottom 1em
+	margin-top 1em
+	padding 1em
+	position relative
+	text-align center
+	width 145px
+	&:before
+		border-bottom 25px solid transparent
+		border-left 10px solid salmon
+		border-right 10px solid transparent
+		border-top 25px solid transparent
+		content ""
+		left 0	
+		position absolute
+		top 0px
+	&:hover
+		border 1px solid rgba(azul_claro, 1)
+		border-bottom 2px solid azul_medio
+		box-shadow 1px 1px 5px rgba(black, 0.5)	
+		color azul_claro
+		font-weight bold
+//  ------  Fin Boton Blanco Borde Naranja ------
+//  ------  Inicio Boton Blanco Borde Naranja ------
+.btnNaran
+	background salmon
+	border-bottom 2px solid #B41818
+	border-radius 3px
+	cursor pointer
+	display block
+	margin 0 auto
+	margin-bottom 0.4em
+	max-width 70%
+	padding 0.7em 2.5em
+	text-align center
+	text-shadow 1px 1px 2px black	
+	&:hover					
+		background rgba(salmon, 0.8)
+//  ------  Fin Boton Blanco Borde Naranja ------			
+//  ------  Pagina inicio ------			
+	.inicio
+		figure
+			margin 0 auto
+			img
+				width 100%	
+		.textoInferior
+			font-size 20px
+			margin 1em 1.5em 1.5em 1.5em
+			span
+				font-size 28px
+		.textoSuperior	
+			border-bottom none
+			color azul_texto
+			font-size 24px
+			font-weight normal
+			line-height 135%
+			margin 0
+			max-width 100%				
+			text-align left
+			padding-bottom 1em
+//  ------  Inicio Pagina Mi Perfil ------
+.miperfil
+	p
+		margin 1em 1.5em
+	.hv
+		background azul_claro
+		border-radius 3px
+		color white
+		display block
+		font-style italic
+		margin 1em 1.5em
+		opacity 0.7
+		padding 0.2em 1.5em
+		text-align center
+		&:hover
+			opacity 0.8
+		
+	.miavatar
+		margin 0 auto
+		margin-top 2em	
+		margin-bottom 1.5em
+		width 200px	
+		.miavat
+			border-radius 50%
+			box-shadow 0px 0px 5px rgba(black, 0.4)							
+			width 100%
+	.masinfo
+		overflow hidden
+		width 100%			
+	.masinfo2
+		display none
+					
+//  ------  Fin Pagina Mi Perfil ------
+//  ------  Inicio Pagina Portafolio ------
+	// **** animacion Css contenedor pag. portafolio
+.portafolio
+	a
+		transition all .4s
+	img
+		max-height 260px		
+	.muestra
+		border-radius 3px
+		box-shadow 0px 0px 5px rgba(black, 0.4)
+		display block
+		height 260px
+		margin 1.5em
+		overflow hidden
+		position relative
+		&:hover .overlay_bloc
+			background-color rgba(azul_claro, 0.7)
+			display block
+		&:hover span
+			bottom 0
+			color #ffffff
+			height 100px
+		.overlay_bloc
+			background-color rgba(azul_claro, 0)
+			height 100%
+			left 0
+			position absolute
+			top 0
+			transition all 1s
+			width 100%
+			z-index 9900	
+		span
+			background #97bf0d
+			bottom 0
+			display block
+			height 0
+			left 0
+			position absolute
+			text-shadow 1px 1px 2px rgba(black, 0.5)
+			transition all .4s		
+			width 100%
+			z-index 9910
+			h2
+				line-height 1%
+				margin 1em 0 0.7em 0
+				text-shadow 1px 1px 2px rgba(black, 0)
+				text-transform uppercasetext-shadow 1px 1px 2px rgba(black, 0.5)
+			p
+				font-weight lighter
+				line-height 120%
+				margin 1em 0.5em
+				max-height 30px
+				overflow hidden			
+				padding 0.5em
+				text-align center
+//  ------  Fin Pagina Portafolio ------
+	//  ------  Inicio Interna Portafolio ------
+	//  ------  Interna Puls4, Food, Jummy, Giovanny ------
+.internaPortafolio
+	h1
+		border-bottom none
+		color azul_medio
+		max-width 100%
+		padding-top 1.5em
+	
+	h2	
+		margin-top 1em
+	h3
+		margin 0 1.5em
+		text-align left
+	figure
+		margin 0 auto
+		img
+			width 100%
+	ul
+		&:before
+			color salmon
+			content: "\e603"
+			font-family: 'icomoon';
+			margin-right 0.5em
+	.btnBlanco
+		margin-top 2em
+	.btnNaran
+		font-weight lighter
+		padding 0.4em 0.3em 0.3em 0.3em
+		position absolute
+		right 24px
+		text-shadow 1px 1px 2px rgba(black, 0.5)
+		top 52px
+		width 67px
+		&:before
+			content: "\e605"
+			font-family: 'icomoon';
+			margin-right 0.3em
+			vertical-align middle
+	//  ------  Fin Interna Portafolio  ------
+//  ------  Inicio Pagina Contacto ------
+.contacto
+	a
+		color azul_medio
+		font-weight bold
+	h2
+		font-size 22px
+		font-weight bold
+		margin 2em 1em 1em 1em
+		text-align left
+		// IconFonts	
+		&:before
+			color azul_claro
+			content: "\e028"
+			font-family: 'icomoon';
+			font-weight normal
+			margin-right 0.5em		
+	.fondo
+		background rgba(gris_claro, 0.3)
+		padding 0.5em 0
+	.git
+		font-weight bold
+		text-align center
+		opacity 0.8
+		a
+			color salmon	
+		&:before
+			content: "\f00a"
+			font-family: 'icomoon';
+			font-size 20px
+			font-weight normal
+			margin-right 0.5em	
+			vertical-align top
+		&:hover
+			color azul_medio		
+//  ------  Fin Pagina Contacto ------
+// ************************************
+// ******  responsive  ********
+@media screen and (min-width: 768px)
+	body
+		header
+		//  ***** Menu Mobile global *****	
+			#menuMobile
+				display none
+		//  ***** Menu normal global *****
+			#menuNormal
+				background rgba(gris_claro, 0)
+				display inline-block
+				height 40px
+				margin 0
+				margin-right -1.5em
+				position absolute
+				right 1.5em
+				top 0
+				width 70%
+				ul
+					float right
+					height 40px
+					width 340px				
+					li		
+						display inline-block
+						margin 0
+						max-width 110px
+						padding  0
+						position relative
+						&:before
+							border-right 1px solid salmon
+							content ""
+							height 1.5em
+							position absolute
+							right 0
+							top 7px
+						&:last-child:before
+							content none
+						a
+							padding 0.74em 0							
+			//  ------  Section Pagina inicio ------
+			.inicio
+			//  ------  Section Mi Perfil ------
+			.miperfil
+				padding 0
+				margin 0
+				.hv
+					border-radius 0px
+					margin 1em 0
+				.masinfo
+					display inline-block
+					margin  0 0.4em 0 0
+					width 49%
+					&:nth-child(odd)
+						margin-right 0
+					.imgPerfil
+						background salmon
+						background-image url(../img/imgmiperfil.png)
+						background-position center center
+						background-repeat no-repeat		
+						background-size cover
+						height 260px
+						width 100%
+					.opciones
+						background rgba(gris_claro, 0.3)
+						border-radius 3px
+						color azul_texto
+						display inline-block
+						min-height 260px
+						.btnNaran
+							max-width 100%
+							
+					
+			//  ------  Section Portafolio ------			
+		.portafolio
+			.muestra
+				width 46%
+				margin 0 0 2% 2%
+				display inline-block
+				vertical-align top
+				&:nth-child(odd)
+					margin-right 1%
+			//  ------  Section Contact0 ------	
+		.contacto
+			h2, p
+				text-align center
+			h2 
+				text-align center
+						
+//@media screen and (min-width:940px)
+	
+			
+	
+			

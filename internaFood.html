@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Descripción página Food</title>
+	<!-- Descripción: entre 155 a 160 caracteres -->
+	<meta name="description" content="Portafolio Web Giovanny Calderón, Giovanny Calderon">	
+	<!-- Normaliza estilos -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Vinculación mi hoja de estilos -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Prefijos-->
+	<script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+	<header>
+			<a href="index.html"><h4>Giovanny<span class="colorN">Calderón</span></h4></a>	
+			<!-- Cambio Menu a Boton Vista Movil -->
+			<nav id="menuMobile">
+				<div id="menuButton">
+				</div>
+			</nav>
+			<!-- Menu Vista Normal -->
+			<nav id="menuNormal">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="miperfil.html">Mi Perfil</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+	</header>
+	<section class="internaPortafolio">
+		<a href="portafolio.html" class="btnNaran">Volver</a>
+		<h1>Food Facilito</h1>
+		<h2>Desarrollo Web - Bootstrap</h2>
+		<figure>
+			<img src="img/food1.png" alt="Jummy">
+		</figure>
+		<p>Ejemplo de Web App con integración de Bootstrap, IcoMoon, fuentes personalizadas, animaciones y transiciones en CSS, ubicación del restaurante en mapa de Google Maps, optimización de imágenes.<br><br><strong>Mobile Firts, imágenes adaptadas para Pantalla Retina.</strong></p>
+		<h3>Tecnologías utilizadas:</h3>
+	
+			<ul>HTML5</ul>
+			<ul>Css3</ul>
+			<ul>Bootstrap</ul>
+			<ul>Sublime Text -Stylus</ul>
+		<!-- Boton Blanco -->
+		<a href="//goo.gl/6xwIMv" target="_blank" class="btnBlanco">Visitar Sitio Web</a>
+		<!-- Fin Boton Blanco -->	
+	</section>
+	<script src="js/modernizr.custom.54642.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+	<script>
+		/*inicio();*/
+		/*$(function(){
+
+		});*/
+		
+		// Header detecion resolucion 
+			jQuery(function($) {
+                var open = false;
+
+                function resizeMenu() {
+                    if ($(this).width() < 768) {
+                        if (!open) {
+                            $("#menuNormal").hide();
+                        }
+                        $("#menuMobile").show();
+                    }
+                    else if ($(this).width() >= 768) {
+                        if (!open) {
+                            $("#menuNormal").show();
+                        }
+                        $("#menuMobile").hide(); 
+                    }
+                }
+        // Header efecto deslizar menu
+                function setupMenuButton() {
+                    $("#menuMobile").click(function(e) {
+                        $('#menuNormal').slideToggle('slow');
+        
+                        open = !open;
+                    });
+                }
+                $(window).resize(resizeMenu);
+                resizeMenu();
+                setupMenuButton();
+            });
+	   </script>
+</body>
+</html>

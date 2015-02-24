@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Potafolio Giovanny Calderon - Diseñador, maquetador y desarrollador web, web app y movil</title>
+	<!-- Descripción: entre 155 a 160 caracteres -->
+	<meta name="description" content="Portafolio Web Giovanny Calderón, Giovanny Calderon">	
+	<!-- Normaliza estilos -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Vinculación mi hoja de estilos -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Prefijos-->
+	<script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+	<header>
+			<a href="index.html"><h4>Giovanny<span class="colorN">Calderón</span></h4></a>	
+			<!-- Cambio Menu a Boton Vista Movil -->
+			<nav id="menuMobile">
+				<div id="menuButton">
+				</div>
+			</nav>
+			<!-- Menu Vista Normal -->
+			<nav id="menuNormal">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="miperfil.html">Mi Perfil</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+	</header>
+	<section class="portafolio">
+		<h1>Portafolio</h1>
+		<h2>Aquí podrás encontrar algo de mi trabajo incluyendo la página que estás viendo</h2>
+		<h3>Diseño, Maquetación y Desarrollo de Aplicaciones Web y Moviles</h3>
+
+			<article class="muestra">  
+			    <a href="internaPulsar.html"> 
+			    <img src="img/puls4.png" alt="Puls4">
+			    <div class="overlay_bloc"></div>
+			    <span><h2>Puls4</h2><p>Ejemplo de una Web App - Responsive Design, con implementación de un formulario que agrega un post... </p></span>
+			    </a>		
+			</article>
+
+			<article class="muestra">  
+			    <a href="internaFood.html"> 
+			    <img src="img/food.png" alt="Food">
+			    <div class="overlay_bloc"></div>
+			    <span><h2>Food Facilito</h2><p>Ejemplo de Web App con integración de Bootstrap, IcoMoon, fuentes personalizadas, animaciones y transiciones en Css...</p></span>
+			    </a>		
+			</article>
+
+			<article class="muestra">  
+			    <a href="internaJummy.html"> 
+			    <img src="img/jummy.jpg" alt="Jummy Restaurant">
+			    <div class="overlay_bloc"></div>
+			    <span><h2>Jummy Restaurant</h2><p>Ejemplo de una Página Web Responsive Design donde el menú de navegación cambia con jQuery… </p></span>
+			    </a>		
+			</article>
+
+			<article class="muestra">  
+			    <a href="internaGiovanny.html"> 
+			    <img src="img/giovanny.png" alt="Giovanny Calderón">
+			    <div class="overlay_bloc"></div>
+			    <span><h2>Giovanny Calderón</h2><p>Página Web Responsive Design, animaciones en Css y jQuery, IcoMoon, galería fotográfica, fuentes personalizadas… </p></span>
+			    </a>		
+			</article>
+		<!-- Boton Blanco -->
+		<a href="contacto.html" class="btnBlanco">Contáctame</a>
+		<!-- Fin Boton Blanco -->
+
+
+
+	</section>
+	<script src="js/modernizr.custom.54642.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+	<script>
+		/*inicio();*/
+		/*$(function(){
+
+		});*/
+		
+		// Header detecion resolucion 
+			jQuery(function($) {
+                var open = false;
+
+                function resizeMenu() {
+                    if ($(this).width() < 768) {
+                        if (!open) {
+                            $("#menuNormal").hide();
+                        }
+                        $("#menuMobile").show();
+                    }
+                    else if ($(this).width() >= 768) {
+                        if (!open) {
+                            $("#menuNormal").show();
+                        }
+                        $("#menuMobile").hide(); 
+                    }
+                }
+        // Header efecto deslizar menu
+                function setupMenuButton() {
+                    $("#menuMobile").click(function(e) {
+                        $('#menuNormal').slideToggle('slow');
+        
+                        open = !open;
+                    });
+                }
+                $(window).resize(resizeMenu);
+                resizeMenu();
+                setupMenuButton();
+            });
+	   </script>
+</body>
+</html>
